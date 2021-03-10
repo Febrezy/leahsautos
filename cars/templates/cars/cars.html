@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>This is a selection of our top vehicles.</h1>
+    {% for car in cars %}
+    <h2>{{ car.title }}</h2>
+    <p>${{ car.price }}</p>
+    <p>{{ car.miles }} miles</p>
+    <img src="{{ car.picture.url }}" width="400px">
+
+    {% endfor %}
+</body>
+</html>
